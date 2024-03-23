@@ -4,3 +4,12 @@
 #Zhang Peixuan
 #
 #
+
+#游戏设计玩法
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+}
