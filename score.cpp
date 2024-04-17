@@ -1,4 +1,3 @@
-
 #include "gobang.h"
 #include <vector>
 
