@@ -144,7 +144,7 @@ int main()
 			}
 			
 			ChangeScoreBoard(x, y, Board);
-			cout<<'1'<<endl;
+			
 			DisplayBoard();
 			if(judge(x, y) == BLACK)
 			{
