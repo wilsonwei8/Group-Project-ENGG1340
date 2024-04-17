@@ -12,7 +12,7 @@ void MoveP(int *pBoard, int piece)	// player move
 	// Gets the drop position and checks if the input format is valid 
 	cout << "Please enter the position to place the chess (letter + number):";
 	while((c = getchar()) != '\n');
-	cin >> cY >> iX;
+	scanf("%c%d", &cY, &iX);
 	
 	if((cY >= 'A' && cY <= 'O') && (iX >= 1 && iX <= 15))
 	{
