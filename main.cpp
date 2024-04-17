@@ -124,12 +124,20 @@ int main()
 		}		
 	}
 	if (mode==2){
-		int i;
+		int i,j;
 		
 		InitBoardArray();
 		chooseboard();
 		DisplayBoard();
-		
+		for(i=0;i<SIZE;i++){
+			for(j=0;j<SIZE;j++){
+				if (Board[i][j]==BLACK || Board[i][j]==WHITE){
+					x = i;
+					y = j;
+					ChangeScoreBoard(x, y, Board);
+				}
+			}
+		}
 		while(1)
 		{
 			 
