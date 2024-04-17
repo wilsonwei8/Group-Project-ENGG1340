@@ -69,5 +69,4 @@ void chooseboard(){
             file.close();
         }
     }
-
 }
