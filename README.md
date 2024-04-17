@@ -1,6 +1,6 @@
 // This is a group project for ENGG1340 Group100 
 
-// This game is called Super AI.
+// This game is called Super Gobang.
 
 // There are three modes to choose from. 
 2. Choose "r" to enter the tutorial where you can learn and try how to play Gobang.
