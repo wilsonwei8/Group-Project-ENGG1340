@@ -59,7 +59,7 @@ void ChangeScoreBoard(int x, int y, int (*pBoard)[15])	// refresh score board
 void ScorePosi(int x, int y, int (*pBoard)[15], int side) // score particular position
 {	
 	int i, j, flag_b, flag_w;
-	
+	int* LineArray = new int[9];  //Create dynamic memory
 	// Determines if the position is legal  
 	if(ScoreBoard_b[x][y] == -1 || ScoreBoard_w[x][y] == -1) return;
 	
@@ -74,7 +74,7 @@ void ScorePosi(int x, int y, int (*pBoard)[15], int side) // score particular po
 			LineArray[i] = pBoard[(x-4+i)][y] ;
 		}
 	}
-	LineStateRecord[LineState(LineArrayPtr)] += 1;
+	LineStateRecord[LineState(LineArray)] += 1;
 	
 	//anti-diagonal
 	for(i=0; i<=9; i++)
@@ -86,7 +86,7 @@ void ScorePosi(int x, int y, int (*pBoard)[15], int side) // score particular po
 			LineArray[i] = pBoard[x-4+i][y+4-i];
 		}
 	}
-	LineStateRecord[LineState(LineArrayPtr)] += 1;
+	LineStateRecord[LineState(LineArray)] += 1;
 	
 	//verticle
 	for(i=0; i<=9; i++)
@@ -98,7 +98,7 @@ void ScorePosi(int x, int y, int (*pBoard)[15], int side) // score particular po
 			LineArray[i] = pBoard[x][y+4-i];
 		}
 	}
-	LineStateRecord[LineState(LineArrayPtr)] += 1;
+	LineStateRecord[LineState(LineArray)] += 1;
 	
 	//diagonal 
 	for(i=0; i<=9; i++)
@@ -110,7 +110,7 @@ void ScorePosi(int x, int y, int (*pBoard)[15], int side) // score particular po
 			LineArray[i] = pBoard[x-4+i][y-4+i];
 		}
 	}
-	LineStateRecord[LineState(LineArrayPtr)] += 1;
+	LineStateRecord[LineState(LineArray)] += 1;
 	
 	
 	//According to the obtained chess type data, estimate the possible value
@@ -226,6 +226,7 @@ void ScorePosi(int x, int y, int (*pBoard)[15], int side) // score particular po
 	{
 		LineStateRecord[i] = 0;
 	}
+	delete[] LineArray;  //Release dynamic memory
 }
 
 
