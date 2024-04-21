@@ -37,8 +37,7 @@ extern int ScoreBoard_w[SIZE][SIZE];	// scoreboard for white piece
 extern int mode; 						//mode 0: man vs man, mode 1: man vs machine  
 extern int side_p, side_ai;			// record which side you choose 
 extern int Posi[2];					// record the place where you drop the chess piece
-extern vector<int> LineArray;				// Using a vector to record the drop situation in a single direction
-extern int* LineArrayPtr;				// record the dropping chess of a single side  
+extern int* LineArray;				// Using Dynamic memory management to record the drop situation in a single direction
 extern int LineStateRecord[9];			// Records possible moves in a position, with indexes corresponding to moves 
 
 //display
