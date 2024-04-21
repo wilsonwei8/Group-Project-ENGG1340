@@ -11,8 +11,7 @@ int Posi[2];					// record the place where you drop the chess piece
 			// record the dropping chess of a single side 
 int LineStateRecord[9];			// Records possible moves in a position, with indexes corresponding to moves
 
-vector<int> LineArray(9);
-int* LineArrayPtr = LineArray.data();
+
 
 void InitBoardArray()
 {
