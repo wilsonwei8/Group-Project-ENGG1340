@@ -6,6 +6,7 @@
 # include <vector>
 # include <fstream>
 # include <sstream>
+#include "string"
 using namespace std;
 # ifndef GOBANG_H
 # define GOBANG_H
