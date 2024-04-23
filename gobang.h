@@ -29,6 +29,20 @@ using namespace std;
 # define S2 7 	
 # define NTH 8 	
 
+// Color codes
+#define RESET "\033[0m"
+#define BOLD "\033[1m"
+#define RED "\033[31m"
+#define GREEN "\033[32m"
+#define YELLOW "\033[33m"
+#define BLUE "\033[34m"
+#define MAGENTA "\033[35m"
+#define CYAN "\033[36m"
+#define ORANGE "\033[38;5;208m"
+#define PURPLE "\033[38;5;135m"
+#define GRAY "\033[38;5;242m"
+#define PINK "\033[38;5;205m"
+
 # define op(A) ((A == BLACK) ? WHITE : BLACK)  
 # define max(A, B) (((A) > (B)) ? (A) : (B))
 # define min(A, B) (((A) < (B)) ? (A) : (B))
