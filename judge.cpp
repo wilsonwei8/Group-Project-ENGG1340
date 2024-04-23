@@ -52,7 +52,7 @@ int judge(int x, int y)
 void ChooseMode()
 {	
 	string s;
-	string text7_1 = "Please select the mode for\"pvp\"";
+	string text7_1 = "Please select the mode for \"pvp\"";
 	string text7_2 = "(p)or\"";
 	string text7_3 = "pve\"(a) or ";
 	string text7_3 = "Residual situation(r): ";
@@ -126,22 +126,62 @@ void ChooseMode()
 void ChooseSide()
 {	
 	string s;
-	cout << "Please choose whether to play as black (b) or white (w):";
+	string text9_1 = "Please choose whether to play as black ";
+	string text9_2 = "(b) or white";
+	string text9_3 = "(w): ";
+
+	for (char& c : text9_1) {
+		cout << BOLD << c << RESET;
+		this_thread::sleep_for(milliseconds(5));
+	      }
+	
+	for (char& c : text9_2) {
+		if (c == 'b'){
+			cout << BOLD << RED << c << RESET;
+			this_thread::sleep_for(milliseconds(5));
+		    }
+	        else {
+			cout << BOLD << c << RESET;
+			this_thread::sleep_for(milliseconds(5));
+		    }
+		}
+	for (char& c : text9_3) {
+		if (c == 'w'){
+			cout << BOLD << RED << c << RESET;
+			this_thread::sleep_for(milliseconds(5));
+		    }
+	        else {
+			cout << BOLD << c << RESET;
+			this_thread::sleep_for(milliseconds(5));
+		    }
+		}
+	
 	cin >> s;
-	if(s[0] == 'b')
+	if(s == 'b')
 	{
 		side_p = BLACK;
 		side_ai = WHITE;
 	}
-	else if(s[0] == 'w')
+	else if(s == 'w')
 	{
 		side_p = WHITE;
 		side_ai = BLACK;
 	} 
 	else
 	{
-		cout << "\nPlease type in b or w.";
+		text10 = "Please type in b or w.";
+		for (char& c : text10) {
+		if (c == 'w' || c == 'b'){
+			cout << BOLD << RED << c << RESET;
+			this_thread::sleep_for(milliseconds(5));
+		    }
+	        else {
+			cout << BOLD << c << RESET;
+			this_thread::sleep_for(milliseconds(5));
+		    }
+		}
 		ChooseSide();
+		
 	}
 }
 
