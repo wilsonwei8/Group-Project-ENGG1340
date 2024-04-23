@@ -48,14 +48,14 @@ int judge(int x, int y)
 
 void ChooseMode()
 {	
-	char s;
+	string s;
 	printf("Please select the mode for\"pvp\"(p)or\"pve\"(a) or Residual situation(r):");
 	cin >> s;
-	if(s == 'p')
+	if(s[0] == 'p')
 		mode = 0;
-	else if(s == 'a')
+	else if(s[0] == 'a')
 		mode = 1;
-	else if(s == 'r')
+	else if(s[0] == 'r')
 		mode = 2;
 	else
 	{
@@ -67,15 +67,15 @@ void ChooseMode()
 
 void ChooseSide()
 {	
-	char s;
+	string s;
 	cout << "Please choose whether to play as black (b) or white (w):";
 	cin >> s;
-	if(s == 'b')
+	if(s[0] == 'b')
 	{
 		side_p = BLACK;
 		side_ai = WHITE;
 	}
-	else if(s == 'w')
+	else if(s[0] == 'w')
 	{
 		side_p = WHITE;
 		side_ai = BLACK;
