@@ -172,14 +172,15 @@ int main()
 				cout <<"White wins!"<<endl;
 				break; 
 			}	
-		}		
+		}
+	}
 	cout << "the game is over, do you like to play again or exit? (1 means play, 0 means exit)";
-	int a;
+	string a;
 	cin >> a;
-	if x==1{
+	if (a[0]=='1'){
 		continue;
 	}
-	else if x==0{
+	if (a[0]=='0'){
 		break;
 	}
 	else{
