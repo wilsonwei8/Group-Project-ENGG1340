@@ -177,7 +177,7 @@ int main()
 	}
 
 	while(1) //Prevent direct exit
-	{	enter 0 to exit the game
+	{	cout<<"enter 0 to exit the game"
 		x = getchar(); 
 		if(x == '0') break;
 	}  
