@@ -86,4 +86,6 @@ void PrintBoardArray(int *pBoard); 	//for test
 //chooserandom
 void chooseboard();//used to randomly input residual files
 
+//introduction
+void introduction();
 #endif
