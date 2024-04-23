@@ -6,7 +6,7 @@
 int main()
 {	
 	int x, y;
-	
+	while (1){
 	ChooseMode();
 	
 	if(mode==1) // man vs machine mode 
@@ -173,8 +173,21 @@ int main()
 				break; 
 			}	
 		}		
-
+	cout << "the game is over, do you like to play again or exit? (1 means play, 0 means exit)";
+	int a;
+	cin >> a;
+	if x==1{
+		continue;
 	}
+	else if x==0{
+		break;
+	}
+	else{
+		cout << " I think you mean exit, huh?"<<endl;
+		break;
+	}
+	
+}
 
 	while(1) //Prevent direct exit
 	{	cout<<"enter 0 to exit the game"
