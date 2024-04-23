@@ -51,46 +51,8 @@ int judge(int x, int y)
 
 void ChooseMode()
 {	
-	string s;
-	string text7_1 = "Please select the mode for \"pvp\"";
-	string text7_2 = "(p)or\"";
-	string text7_3 = "pve\"(a) or ";
-	string text7_3 = "Residual situation(r): ";
-
-	 for (char& c : text7_1) {
-        cout << BOLD << c << RESET;
-        this_thread::sleep_for(milliseconds(5));
-      }
-	for (char& c : text7_2) {
-        if (c == 'p'){
-	        cout << BOLD << RED << c << RESET;
-	        this_thread::sleep_for(milliseconds(5));
-	    }
-	    else {
-	        cout << BOLD << c << RESET;
-	        this_thread::sleep_for(milliseconds(5));
-	    }
-	}
-	for (char& c : text7_3) {
-        if (c == 'a'){
-	        cout << BOLD << RED << c << RESET;
-	        this_thread::sleep_for(milliseconds(5));
-	    }
-	    else {
-	        cout << BOLD << c << RESET;
-	        this_thread::sleep_for(milliseconds(5));
-	    }
-	}
-	for (char& c : text7_4) {
-        if (c == 'r'){
-	        cout << BOLD << RED << c << RESET;
-	        this_thread::sleep_for(milliseconds(5));
-	    }
-	    else {
-	        cout << BOLD << c << RESET;
-	        this_thread::sleep_for(milliseconds(5));
-	    }
-	}
+	char s;
+	printf("Please select the mode for\"pvp\"(p)or\"pve\"(a) or Residual situation(r):");
 	cin >> s;
 	if(s == 'p')
 		mode = 0;
@@ -100,24 +62,7 @@ void ChooseMode()
 		mode = 2;
 	else
 	{
-		string text8_1 = "please type in letter ";
-		string text8_2 = "p or a."
-
-		for (char& c : text8_1) {
-		        cout << BOLD << c << RESET;
-		        this_thread::sleep_for(milliseconds(5));
-		      }
-
-		for (char& c : text8_2) {
-		        if (c == 'p' || c == 'a'){
-			        cout << BOLD << RED << c << RESET;
-			        this_thread::sleep_for(milliseconds(5));
-			    }
-			    else {
-			        cout << BOLD << c << RESET;
-			        this_thread::sleep_for(milliseconds(5));
-			    }
-			}
+		cout << "\nplease type in letter p or  a." << endl;
 		ChooseMode();
 	}
 } 
@@ -125,37 +70,8 @@ void ChooseMode()
 
 void ChooseSide()
 {	
-	string s;
-	string text9_1 = "Please choose whether to play as black ";
-	string text9_2 = "(b) or white";
-	string text9_3 = "(w): ";
-
-	for (char& c : text9_1) {
-		cout << BOLD << c << RESET;
-		this_thread::sleep_for(milliseconds(5));
-	      }
-	
-	for (char& c : text9_2) {
-		if (c == 'b'){
-			cout << BOLD << RED << c << RESET;
-			this_thread::sleep_for(milliseconds(5));
-		    }
-	        else {
-			cout << BOLD << c << RESET;
-			this_thread::sleep_for(milliseconds(5));
-		    }
-		}
-	for (char& c : text9_3) {
-		if (c == 'w'){
-			cout << BOLD << RED << c << RESET;
-			this_thread::sleep_for(milliseconds(5));
-		    }
-	        else {
-			cout << BOLD << c << RESET;
-			this_thread::sleep_for(milliseconds(5));
-		    }
-		}
-	
+	char s;
+	cout << "Please choose whether to play as black (b) or white (w):";
 	cin >> s;
 	if(s == 'b')
 	{
@@ -169,21 +85,12 @@ void ChooseSide()
 	} 
 	else
 	{
-		text10 = "Please type in b or w.";
-		for (char& c : text10) {
-		if (c == 'w' || c == 'b'){
-			cout << BOLD << RED << c << RESET;
-			this_thread::sleep_for(milliseconds(5));
-		    }
-	        else {
-			cout << BOLD << c << RESET;
-			this_thread::sleep_for(milliseconds(5));
-		    }
-		}
+		cout << "\nPlease type in b or w.";
 		ChooseSide();
-		
 	}
 }
+
+
 
 
 int RestrictedMove(int x, int y)	//determine whether it is a restricted move
