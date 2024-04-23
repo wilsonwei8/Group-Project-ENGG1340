@@ -34,8 +34,14 @@ void introduction() {
   string text2 = "  Before we start, are you familiar with the rules of Gobang, especially the balance breaker -- restricted hand? (Y or N)";
 
   for (char& c : text1) {
+    if (c == "Y" || c == "N"){
+        cout << BOLD << RED << c << RESET;
+        this_thread::sleep_for(milliseconds(5));
+    }
+    else {
         cout << BOLD << c << RESET;
         this_thread::sleep_for(milliseconds(5));
+    }
   }
   cout << endl;
   for (char& c : text2) {
@@ -83,10 +89,15 @@ void introduction() {
     }
     else {
       for (char& c : text6) {
+        if (c == "Y" || c == "N"){
+        cout << BOLD << RED << c << RESET;
+        this_thread::sleep_for(milliseconds(5));
+    }
+    else {
         cout << BOLD << c << RESET;
         this_thread::sleep_for(milliseconds(5));
+    }
       }
     }
   }
 }
-
