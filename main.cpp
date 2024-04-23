@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 # include "gobang.h"
-#include "string"
+
 #include <vector>
 
 int main()
