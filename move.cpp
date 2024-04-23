@@ -10,7 +10,7 @@ void MoveP(int *pBoard, int piece)	// player move
 	int iValue; 
 	
 	// Gets the drop position and checks if the input format is valid 
-	cout << "Please enter the position to place the chess (letter + number):";
+	cout << "\33[1mPlease enter the position to place the chess \033[1;33m(letter + number):\033[0m";
 	while((c = getchar()) != '\n');
 	scanf("%c%d", &cY, &iX);
 	
@@ -21,7 +21,7 @@ void MoveP(int *pBoard, int piece)	// player move
 	} 
 	else 
 	{
-		cout << "The input format is incorrect. Please re-enter the position: ";
+		cout<<BOLD << "The input format is incorrect. Please re-enter the position: "<<endl;
 
 		MoveP(pBoard, piece);
 		return; 
@@ -31,7 +31,7 @@ void MoveP(int *pBoard, int piece)	// player move
 	iValue = *(pBoard + 15 * Posi[0] + Posi[1]); 
 	if(iValue == BLACK || iValue == WHITE || iValue == BLACKtem || iValue == WHITEtem)
 	{
-		cout << "There are already pieces in this position, please re-enter the position: "<<endl;
+		cout <<BOLD<< "There are already pieces in this position, please re-enter the position: "<<endl;
 		MoveP(pBoard, piece);
 		return;
 	}	

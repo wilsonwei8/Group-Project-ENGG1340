@@ -52,7 +52,7 @@ int judge(int x, int y)
 void ChooseMode()
 {	
 	string s;
-	cout <<BOLD<< "Please select the mode for \"pvp\" (\033[1;31mp\033[0m) or \"pve\" (\033[1;31ma\033[0m) or Residual situation (\033[1;31mr\033[0m):";
+	cout << "\033[1mPlease select the mode for \"pvp\" (\033[1;31mp\033[0m\033[1m) or \"pve\" (\033[1;31ma\033[0m\033[1m) or Residual situation (\033[1;31mr\033[0m\033[1m):\033[0m" << endl;
 	cin >> s;
 	if(s[0] == 'p')
 		mode = 0;
@@ -62,7 +62,7 @@ void ChooseMode()
 		mode = 2;
 	else
 	{
-		cout<<BOLD << "\nplease type in letter \033[1;31mp\033[0m or \033[1;31ma\033[0m or \033[1;31mr\033[0m." << endl;
+		cout << "\n\033[1mPlease type in letter \033[1;31mp\033[0m \033[1mor \033[1;31ma\033[0m \033[1mor \033[1;31mr\033[0m.\033[0m" << endl;
 		ChooseMode();
 	}
 } 
@@ -71,7 +71,7 @@ void ChooseMode()
 void ChooseSide()
 {	
 	string s;
-	cout <<BOLD<< "Please choose whether to play as black (\033[1;31mb\033[0m) or white (\033[1;31mw\033[0m):" ;
+	cout << "\033[1mPlease choose whether to play as black (\033[1;31mb\033[0m\033[1m) or white (\033[1;31mw\033[0m\033[1m):\033[0m" << endl;
 	cin >> s;
 	if(s[0]== 'b')
 	{
@@ -85,7 +85,7 @@ void ChooseSide()
 	} 
 	else
 	{
-		cout <<BOLD<< "\nPlease type in (\033[1;31mb\033[0m) or (\033[1;31mw\033[0m)."<< endl;
+		cout <<"\n\033[1mPlease type in (\033[1;31mb\033[0m)\033[1m or (\033[1;31mw\033[0m\033[1m).\033[0m"<< endl;
 		ChooseSide();
 	}
 }

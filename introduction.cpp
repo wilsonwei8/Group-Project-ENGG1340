@@ -16,7 +16,7 @@ void introduction() {
 
     for (char& c : title) {
         if (c == '$') {
-            cout << BOLD << GREEN << c << RESET;
+            cout << BOLD << PINK << c << RESET;
             this_thread::sleep_for(milliseconds(5));
         }
         else if (c == '_' || c == '\\' || c == '/' || c == '|') {

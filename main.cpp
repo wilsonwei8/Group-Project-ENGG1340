@@ -27,14 +27,14 @@ int main()
 			y = Posi[1];
 			if(judge(x, y) == -1)			// determine  restricted move 
 			{
-				cout << "Restricted move!" << endl;
+				cout << BOLD<< "Restricted move!" << endl;
 				break;   
 			}
 			ChangeScoreBoard(x, y, Board);	// refresh the scoreboard 
 			DisplayBoard();			// print chessboard  
 			if(judge(x, y) == BLACK)	// determine winning or not 
 			{
-				cout << "Black win!" << endl;
+				cout<<BOLD << "Black win!" << endl;
 				break; 
 			}
 			//white piece move 
@@ -44,10 +44,10 @@ int main()
 			y = Posi[1];
 			ChangeScoreBoard(Posi[0], Posi[1], Board);
 			DisplayBoard();
-			cout << "drop chess piece at " << char(y + 'A') << 15 - x << "." << endl;
+			cout<<BOLD << "drop chess piece at " << char(y + 'A') << 15 - x << "." << endl;
 			if(judge(x, y) == WHITE)
 			{
-				cout << "White win!" << endl;
+				cout <<BOLD<< "White win!" << endl;
 				break; 
 			}
 		}
@@ -62,10 +62,10 @@ int main()
 			ChangeScoreBoard(Posi[0], Posi[1], Board);
 			DisplayBoard();
 	
-			cout << "drop chess piece at " << char(y + 'A') << 15 - x << "." << endl; 
+			cout<<BOLD << "drop chess piece at " << char(y + 'A') << 15 - x << "." << endl; 
 			if(judge(x, y) == BLACK)
 			{
-				cout << "Black win!" << endl;
+				cout<<BOLD << "Black win!" << endl;
 				break; 
 			}
 			//white piece move 
@@ -77,7 +77,7 @@ int main()
 			DisplayBoard();
 			if(judge(x, y) == WHITE)
 			{
-				cout << "White win!" << endl;
+				cout<<BOLD << "White win!" << endl;
 				break; 
 			}
 		}	
@@ -99,14 +99,14 @@ int main()
 			y = Posi[1];
 			if(judge(x, y) == -1)
 			{
-				cout << "Restricted move!" << endl;
+				cout <<BOLD<< "Restricted move!" << endl;
 				break;   
 			}
 			ChangeScoreBoard(x, y, Board);
 			DisplayBoard();
 			if(judge(x, y) == BLACK)
 			{
-				cout << "Black win!" << endl;
+				cout<<BOLD << "Black win!" << endl;
 				break; 
 			}
 			
@@ -119,7 +119,7 @@ int main()
 			DisplayBoard();
 			if(judge(x, y) == WHITE)
 			{
-				cout << "White win!" << endl;
+				cout <<BOLD<< "White win!" << endl;
 				break; 
 			}	
 		}		
@@ -148,7 +148,7 @@ int main()
 			y = Posi[1];
 			if(judge(x, y) == -1)
 			{
-				cout<<"Restricted move"<<endl;
+				cout<<BOLD<<"Restricted move"<<endl;
 				break;   
 			}
 			
@@ -157,7 +157,7 @@ int main()
 			DisplayBoard();
 			if(judge(x, y) == BLACK)
 			{
-				cout<<"Black wins!"<<endl;
+				cout<<BOLD<<"Black wins!"<<endl;
 				break; 
 			}
 			
@@ -170,12 +170,12 @@ int main()
 			DisplayBoard();
 			if(judge(x, y) == WHITE)
 			{
-				cout <<"White wins!"<<endl;
+				cout<<BOLD <<"White wins!"<<endl;
 				break; 
 			}	
 		}
 	}
-	cout << "the game is over, do you like to play again or exit? (1 means play, 0 means exit)";
+	cout<<BOLD << "the game is over, do you like to play again or exit? (1 means play, 0 means exit)";
 	string a;
 	cin >> a;
 	if (a[0]=='1'){
@@ -185,7 +185,7 @@ int main()
 		break;
 	}
 	else{
-		cout << " I think you mean exit, huh?"<<endl;
+		cout <<BOLD<< " I think you mean exit, huh?"<<endl;
 		break;
 	}
 	
