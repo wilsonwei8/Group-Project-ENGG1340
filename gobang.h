@@ -7,6 +7,9 @@
 # include <fstream>
 # include <sstream>
 #include "string"
+#include <chrono>
+#include <thread>
+using namespace chrono;
 using namespace std;
 # ifndef GOBANG_H
 # define GOBANG_H
