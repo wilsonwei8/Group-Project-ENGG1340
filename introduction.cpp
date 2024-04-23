@@ -106,8 +106,5 @@ void introduction() {
       }
     }
   }
-
-  return 0;
 }
 
-introduction()
