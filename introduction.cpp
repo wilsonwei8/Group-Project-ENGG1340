@@ -31,6 +31,7 @@ void introduction() {
  \$$    $ \$$    $$| $$    $$| $$  | $$| $$  \$$$ \$$     $/
   \$$$$$$  \$$$$$$  \$$$$$$$  \$$   \$$ \$$   \$$  \$$$$$$/ 
 )"; 
+  cout << endl;
 
     for (char& c : title) {
         if (c == '$') {
@@ -48,8 +49,8 @@ void introduction() {
     }
   this_thread::sleep_for(milliseconds(300));
 
-  string text1 = "Here, you can choose to play with your friend. If you are confident enough, you can also challenge AI!";
-  string text2 = "Before we start, are you familiar with the rules of Gobang, especially the balance breaker -- restricted hand? (Y or N)";
+  string text1 = "  Here, you can choose to play with your friend. If you are confident enough, you can also challenge AI!";
+  string text2 = "  Before we start, are you familiar with the rules of Gobang, especially the balance breaker -- restricted hand? (Y or N)";
 
   for (char& c : text1) {
         cout << BOLD << c << RESET;
@@ -65,10 +66,10 @@ void introduction() {
   
 
   // if enter "Y"
-  string text3 = "Well done! Let's start now!"; 
+  string text3 = "  Well done! Let's start now!"; 
   // if enter "N".
-  string text4 = "Okay, I'll explain the rule to you!";
-  string text5 = R"(Players alternate turns placing a stone of their color on an empty intersection. Black plays first. The winner is the first player to form an unbroken line of five stones of their color horizontally, vertically, or diagonally.
+  string text4 = "  Okay, I'll explain the rule to you!";
+  string text5 = R"(  Players alternate turns placing a stone of their color on an empty intersection. Black plays first. The winner is the first player to form an unbroken line of five stones of their color horizontally, vertically, or diagonally.
   However, when playing the game, people found that the black side had a disproportionate advantage.
   To make the game fairer, a balance breaker -- restricted hand was introduced in this game. The black side cannot use Three-Three, Four-Four, or Long-Chain to win the game. If the black side moves a restricted hand, he will lose automatically.
   If you want to practice more, you can choose r to play residual situation!)";
