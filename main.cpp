@@ -6,6 +6,7 @@
 int main()
 {	
 	int x, y;
+	introduction();
 	while (1){
 	ChooseMode();
 	
