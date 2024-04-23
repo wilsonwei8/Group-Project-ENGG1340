@@ -9,8 +9,8 @@
 #include "string"
 #include <chrono>
 #include <thread>
-using namespace chrono;
 using namespace std;
+using namespace chrono;
 # ifndef GOBANG_H
 # define GOBANG_H
 # define SIZE 15

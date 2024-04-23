@@ -33,8 +33,14 @@ void introduction() {
   string text1 = "  Here, you can choose to play with your friend. If you are confident enough, you can also challenge AI!";
   string text2 = "  Before we start, are you familiar with the rules of Gobang, especially the balance breaker -- restricted hand? (Y or N)";
 
+
   for (char& c : text1) {
-    if (c == "Y" || c == "N"){
+        cout << BOLD << c << RESET ;
+        this_thread::sleep_for(milliseconds(5));
+  }
+  cout << endl;
+  for (char& c : text2) {
+    if (c == 'Y'|| c == 'N'){
         cout << BOLD << RED << c << RESET;
         this_thread::sleep_for(milliseconds(5));
     }
@@ -43,11 +49,8 @@ void introduction() {
         this_thread::sleep_for(milliseconds(5));
     }
   }
-  cout << endl;
-  for (char& c : text2) {
-        cout << BOLD << c << RESET;
-        this_thread::sleep_for(milliseconds(5));
-  }
+
+
 
   string explain_rules;
   
@@ -89,7 +92,7 @@ void introduction() {
     }
     else {
       for (char& c : text6) {
-        if (c == "Y" || c == "N"){
+        if (c == 'Y'|| c == 'N'){
         cout << BOLD << RED << c << RESET;
         this_thread::sleep_for(milliseconds(5));
     }
