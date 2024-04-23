@@ -9,7 +9,7 @@ using namespace std;
 void chooseboard(){
     int c;
     srand(time(NULL)); // initialize the seed for rand()
-    c= rand() % 3 + 1;
+    c= rand() % 3 + 1;// use the random function.
     if (c==1){
     
         ifstream file("random1.txt");
