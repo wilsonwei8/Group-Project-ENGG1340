@@ -52,7 +52,7 @@ int judge(int x, int y)
 void ChooseMode()
 {	
 	string s;
-	cout << "Please select the mode for \"pvp\" (\033[1;31mp\033[0m) or \"pve\" (\033[1;31ma\033[0m) or Residual situation (\033[1;31mr\033[0m):" << endl;
+	cout << "Please select the mode for \"pvp\" (\033[1;31mp\033[0m) or \"pve\" (\033[1;31ma\033[0m) or Residual situation (\033[1;31mr\033[0m):";
 	cin >> s;
 	if(s[0] == 'p')
 		mode = 0;
@@ -71,7 +71,7 @@ void ChooseMode()
 void ChooseSide()
 {	
 	string s;
-	cout << "Please choose whether to play as black (\033[1;31mb\033[0m) or white (\033[1;31mw\033[0m):" << endl;
+	cout << "Please choose whether to play as black (\033[1;31mb\033[0m) or white (\033[1;31mw\033[0m):" ;
 	cin >> s;
 	if(s[0]== 'b')
 	{
@@ -85,7 +85,7 @@ void ChooseSide()
 	} 
 	else
 	{
-		cout << "\nPlease type in (\033[1;31mb\033[0m) or (\033[1;31mw\033[0m).";
+		cout << "\nPlease type in (\033[1;31mb\033[0m) or (\033[1;31mw\033[0m)."<< endl;
 		ChooseSide();
 	}
 }
