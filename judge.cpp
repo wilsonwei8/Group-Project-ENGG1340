@@ -62,7 +62,7 @@ void ChooseMode()
 		mode = 2;
 	else
 	{
-		cout << "\nplease type in letter p or  a." << endl;
+		cout << "\nplease type in letter p or r or a." << endl;
 		ChooseMode();
 	}
 } 
