@@ -1,7 +1,7 @@
 # include "gobang.h"
 # include <iostream>
 #include <vector>
-//
+
 int judge(int x, int y) 
 {	
 
