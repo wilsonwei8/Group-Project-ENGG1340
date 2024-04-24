@@ -17,11 +17,11 @@ void introduction() {
     for (char& c : title) {
         if (c == '$') {
             cout << BOLD << PINK << c << RESET;
-            this_thread::sleep_for(milliseconds(5));
+
         }
         else if (c == '_' || c == '\\' || c == '/' || c == '|') {
             cout << BOLD << BLUE << c << RESET;
-            this_thread::sleep_for(milliseconds(5));
+
         }
         else {
             cout << BOLD << RED << c << RESET;
