@@ -2,6 +2,8 @@ Hi there! This is group 100. Thanks for playing our game! In this file, I will e
 — - - - - - - - - - - - - - -
 This game is called Super Gobang.
 
+Here is the link of our video: https://connecthkuhk-my.sharepoint.com/:v:/g/personal/whs8_connect_hku_hk/EcjK9mCiq4dDqkUwH1COZqUBua9cj-UzQz2EVJBp3qupDA?e=buAdVc
+
 (1). How to run the game 
     step 1. Open the Github workspace.
     step 2. Enter "make main".
